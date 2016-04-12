@@ -7,14 +7,15 @@ class NeuralNetworkTest(unittest.TestCase):
     def tearDown(self):
         print "teardown"
 
-    def getZ_test(self):
+    def test_getZ(self):
         print "getZ"
 
-    def perceptron(self):
+    def test_perceptron(self):
         print "perceptron"
 
-    def sigmoid(self):
+    def test_sigmoid(self):
         print "sigmoid"
 
 if __name__ == '__main__':
-    unittest.main()
+    testSuite = unittest.TestLoader().loadTestsFromTestCase(NeuralNetworkTest)
+    unittest.TextTestRunner(verbosity=2).run(testSuite)
