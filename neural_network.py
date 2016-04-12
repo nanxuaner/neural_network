@@ -11,13 +11,3 @@ def perceptron(z):
 
 def sigmoid(z):
     return 1/(1 + np.exp(-z))
-
-w = [1, 1]
-x = [1, 1]
-b = 2
-z = getZ(w, x, b)
-
-print (z)
-
-print perceptron(z)
-print sigmoid(z)
